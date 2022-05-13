@@ -14,24 +14,25 @@ const MainNavigation = (props) => {
   const openDrawerHandler = () => {
     setDrawerisOpen(true)
   }
-  const closeDrawerHandler
-   = () => {
+  const closeDrawerHandler = () => {
     setDrawerisOpen(false)
   }
 
   return (
     <>
-        {drawerIsOpen && <Backdrop onClick={closeDrawerHandler
-        } />}
-        <SideDrawer show={drawerIsOpen}>
-          <nav className="main-navigation__drawer-nav">
-            <NavLinks onClick={closeDrawerHandler} />
-          </nav>
-        </SideDrawer>
+      {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
+      <SideDrawer show={drawerIsOpen}>
+        <nav className="main-navigation__drawer-nav">
+          <NavLinks onClick={closeDrawerHandler} />
+        </nav>
+      </SideDrawer>
 
       <MainHeader>
-        <button className="main-navigation__menu-btn" onClick={openDrawerHandler}>
-          <span className="top"/>
+        <button
+          className="main-navigation__menu-btn"
+          onClick={openDrawerHandler}
+        >
+          <span className="top" />
           <span />
           <span className="bottom" />
         </button>
