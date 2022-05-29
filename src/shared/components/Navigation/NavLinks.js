@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 import './NavLinks.css'
 
 const NavLinks = (props) => {
-  console.log(props)
   return (
     <ul className="nav-links">
       <li onClick={props.onClick}>

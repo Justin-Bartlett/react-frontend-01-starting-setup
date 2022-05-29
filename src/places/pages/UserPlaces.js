@@ -19,7 +19,7 @@ const DUMMY_PLACES = [
   },
   {
     id: 'p2',
-    title: 'Empire State Building',
+    title: 'The Bodge building Market Hall',
     description: 'One of the most famous skyscrapers in the world',
     imageUrl:
       'https://static.thousandwonders.net/Empire.State.Building.original.141.jpg',
